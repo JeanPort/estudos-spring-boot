@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: anime-service
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  servlet:
+    context-path: /
+  error:
+    include-stacktrace: on_param
+  tomcat:
+    threads:
+      max: 20
+
+logging:
+  level:
+    root: debug
+
+database:
+  url:
+    ${URL:localhost}:${PORT:3306}
+  username:
+    ${USER_NAME:funciona}
+  password:
+    ${PASSWORD:123456}

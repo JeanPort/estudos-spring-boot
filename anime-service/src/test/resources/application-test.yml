@@ -1,0 +1,8 @@
+
+database:
+  url:
+    ${URL:localhost}:${PORT:3306}
+  username:
+    ${USER_NAME:testedoteste}
+  password:
+    ${PASSWORD:senha123}
